@@ -1,0 +1,105 @@
+/*Selectores
+
+    Selectores simples
+        Selectores elementales
+            Selector universal => *
+            Selector de tipo o etiqueta => Nombre de la etiqueta
+        Selectores de atributo
+            Id => Se coloca el id del elemento
+            Clase => Se coloca la clase
+            otros atributos
+            [atributo] ->Selecciona los elementos con ese atributo
+            [atributo=valor] ->Selecciona los elementos que coincidan con el atributo=valor
+            [atributo^=valor] -> Selecciona los elementos cuyo atributo comience con valor
+            [atributo*=valor] -> Selecciona los elementos cuyo atributo contenga valor
+            [atributo$=valor] -> Selecciona los elementos cuyo atributo termine con valor
+            [atributo|=valor] -> Selecciona los elementos cuyo atributo comience con valor o valor-
+
+    Selectores compuestos
+        Selectores agrupados -> Se agrupan los selectores separados por comas y se escribe el estilo una sola vez
+        Selectores combinadores
+            Selector descendente -> Selecciona un elemento dentro de otro
+            Selector de hermano siguiente + -> Selecciona al hermano siguiente adyacente 
+            Selector de hermanos siguientes ~ -> Selecciona  a todos los hermanos siguientes
+            Selector de hijo directo > -> Selecciona SOLO los hijos directos
+
+*/
+
+/* 
+    Selectores de tipo o etiqueta
+*{
+    background-color: lightcoral;
+}
+
+h1{
+    background-color: #fff;
+}
+
+p{
+    background-color: lightseagreen;
+} */
+
+
+
+/*
+Selectores de id y clase
+
+#title{
+    background-color: lightyellow;
+}
+
+.parrafo{
+    background-color: lime;
+    font-size: 20px;
+    font-weight: 700;
+    color: magenta;
+}*/
+
+
+/* 
+Otros atributos
+[href]{
+    background-color: maroon;
+}
+
+[href="google.com"]{
+    background-color: mediumpurple;
+}
+
+[href^="color"]{
+    background-color: rgb(21, 39, 199);
+}
+
+[href*="seccion"]{
+    background-color: green;
+}
+
+[href$="rojo"]{
+    background-color: red;
+}
+
+[lang="en-GB"]{
+    background-color: saddlebrown;
+} */
+
+.text,
+.text-2,
+.text-3,
+.text-4{
+    background-color: steelblue;
+} 
+div .title-2{
+    background-color: sienna;
+}
+
+.text-2 + h3{
+    background-color: tomato;
+}
+
+.text-2 ~ p{
+    color: white;
+}
+
+div > h3{
+    font-family: cursive;
+}
